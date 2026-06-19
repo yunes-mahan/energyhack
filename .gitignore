@@ -1,0 +1,54 @@
+# ── Python ──────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+.pytest_cache/
+
+# ── Node / frontend ─────────────────────────────────────
+node_modules/
+frontend/node_modules/
+frontend/dist/
+dist/
+*.local
+
+# ── Large datasets (download separately — see README) ───
+17304221/
+24798654/
+*.csv
+*.rar
+*.zip
+data/*.parquet
+!data/germany_turbines.parquet
+!data/germany_solar.parquet
+
+# ── Logs & scratch ──────────────────────────────────────
+*.log
+inspect_*.py
+test2.py
+objects.txt
+~$*
+
+# ── Slides / binary docs (kept out of source repo) ──────
+*.pptx
+*.pdf
+
+# ── Screenshots (only curated docs/ images are tracked) ─
+/screenshot*.png
+/ss*.png
+/app_screenshot.png
+make_pptx.py
+make_arch.py
+screenshot.mjs
+
+# ── OS ──────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+
+# ── Local tooling ───────────────────────────────────────
+.claude/
+package.json
+package-lock.json
+download_germany.py.bak
